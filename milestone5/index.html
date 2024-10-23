@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Resume Builder</title>
+    <title>Shareable Resume Builder </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 style="color: #157698;">Dynamic Resume Builder<span style="color: black;"> Asia Parveen</span></h1>
+    <h1>Shareable Resume Builder <span>Asia Parveen</span></h1>
     <form id="resume-form">
-       
+      
              <h2 style="color: white;">Personal Information</h2>
+
+             <label for="username"><b>Username:</b></label>
+             <input type="text" id="username" placeholder="Enter your username" required/><br><br>
+
             <label for="name"><b>Name:</b></label>
             <input type="text" id="name" placeholder="Enter your name" required/><br><br>
 
@@ -19,23 +23,36 @@
 
             <label for="phone"><b>Phone:</b></label>
             <input type="tel" id="phone" placeholder="Enter your phone number" required/><br><br>
-        
+       
             <label for="education"><b>Education: </b></label>
             <textarea id="education" placeholder=" enter your education" rows="4" required></textarea>
-      
+       
             <label for="experience"><b>Experience:</b> </label>
             <textarea id="experience" placeholder=" enter your experience" rows="4" required></textarea>
        
             <label for="skills"><b>Skills: </b></label>
             <textarea id="skills" placeholder=" enter your skills" rows="4" required></textarea>
-       
+    
 
         <button type="submit">Generate Resume</button>
     </form>
     <br>
 
-    <!-- Generate resume here dynamicaly -->
-    <div id="resume-display">
+    <!--  dynamica and editable -->
+    <div id="resume-display" contenteditable="true">
+    </div>
+
+    <br>
+
+    <!-- shareable link and pdf download -->
+     <div id="shareable-link-container" style="display: none;">
+        <h2 class="heading">
+            Shareable Link
+        </h2>
+        <p class="des">view here unique and editable link of your resume:</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
     </div>
     
 
