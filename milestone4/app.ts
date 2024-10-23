@@ -24,7 +24,7 @@ form.addEventListener ('submit', (event:Event) => {
      <p contenteditable = "true">${experience}</p>
      
       <h3>Skills:</h3>
-     <p contenteditable = "true">${skills}</p>`;
+     <p contenteditable = "true"cls>${skills}</p>`;
 
     //  display resume
 
