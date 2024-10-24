@@ -18,3 +18,13 @@ toggleButton2.addEventListener('click', function () {
         education.style.display = "none";
     }
 });
+var toggleButton3 = document.getElementById('toggle-work-experence');
+var workExperence = document.getElementById('work-experence');
+toggleButton3.addEventListener('click', function () {
+    if (workExperence.style.display === "none") {
+        workExperence.style.display = "block";
+    }
+    else {
+        workExperence.style.display = "none";
+    }
+});

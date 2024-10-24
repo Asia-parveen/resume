@@ -168,7 +168,7 @@ button:hover{
 
 /* media query */
 /* //////////////////////////////////////////////////////// */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 350px) {
     body {
         padding: 20px; 
     }

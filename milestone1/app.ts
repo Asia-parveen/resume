@@ -20,3 +20,14 @@ toggleButton2.addEventListener('click', () => {
     }
 
 })
+
+const toggleButton3= document.getElementById('toggle-work-experence') as HTMLButtonElement;
+const workExperence = document.getElementById('work-experence') as HTMLElement;
+toggleButton3.addEventListener('click', () => {
+    if (workExperence.style.display === "none"){
+        workExperence.style.display = "block"
+    }else{
+        workExperence.style.display = "none"
+    }
+
+})
